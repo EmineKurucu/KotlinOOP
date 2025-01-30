@@ -74,6 +74,8 @@ class MainActivity : AppCompatActivity() {
 
         // Abstraction
         println("---Abstraction---")
+        // abstract class , interface
+
 
     }
 }

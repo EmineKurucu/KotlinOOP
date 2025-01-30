@@ -1,6 +1,7 @@
 package com.eminekurucu.kotlinoop
 
-class Sanatci(var name: String, var age : Int, var instruments: String, val gozRengi: String) { // primary constr.
+// primary constr.
+class Sanatci(var name: String, var age : Int, var instruments: String, val gozRengi: String) : Insan(), Sarki, Dans{
     // tüm propertiesler belirtilmek zorunda değil constructor'da
     var sacRengi = "sarısın" // public dışarıdan müdahaleye açık
     private var tur = "insan" // private dışarıdan müdahaleye kapalı
@@ -33,4 +34,19 @@ class Sanatci(var name: String, var age : Int, var instruments: String, val gozR
     fun turuYazdır(){
         println(tur) // class içinde müdahaleye açık
     }
+
+    override fun test() { // abstract olduğu için override etmek zorunlu
+        // abstarct sınıftn gelen abstarct fonksiyonun kendisi
+        TODO("Not yet implemented")
+    }
+
+    override fun dansEtmeFonsk() {
+        TODO("Not yet implemented")
+    }
+
+    override fun sarkiSoyleFonks() {
+        TODO("Not yet implemented")
+    }
+
+
 }
